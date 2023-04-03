@@ -1,0 +1,37 @@
+header {
+    background-color: var(--dark-gray);
+    color: var(--deep-orange);
+    font-size: 3vh;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+#menu-toggle {
+    margin-right: 0;
+
+}
+
+.hidden {
+    display: none;
+}
+
+#main-page {
+    -webkit-background-image: linear-gradient(var(--light-orange), var(--orange-yellow), var(--deep-orange));
+    -moz-background-image: linear-gradient(var(--light-orange), var(--orange-yellow), var(--deep-orange));
+    background-image: linear-gradient(var(--light-orange), var(--orange-yellow), var(--deep-orange));
+    height: 100vh;
+}
+
+
+:root {
+    --dark-gray: #393939;
+    --light-gray: #B9B9B9;
+    --deep-orange: #FF5A09;
+    --light-orange: #ec7f37;
+    --orange-yellow: #be4f0c;
+}
+
+@media screen and (min-width: 960px) {
+    * {
+    }
+}
