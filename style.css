@@ -1,5 +1,5 @@
 * {
-    color: white;
+    color: var(--five);
     font-family: 'Luxurious Roman', cursive;
     font-weight: bold;
 }
@@ -14,8 +14,7 @@ header {
     text-align: center;
     justify-content: space-between;
     height: 6vh;
-    margin-top: .5vh;
-    margin-bottom: .55vh;
+    margin-bottom: 1vh;
 }
 header:first-child {
     margin-left: 1vh;
@@ -65,17 +64,18 @@ header:first-child {
     background-color: var(--dark-gray);
 }
 .hov {
-    -webkit-background-image: linear-gradient(var(--light-gray), var(--dark-gray));
-    -moz-background-image: linear-gradient(var(--light-gray), var(--dark-gray));
-    background-image: linear-gradient(var(--two), var(--four));
+    -webkit-background-image: linear-gradient(var(--four), var(--four), var(--two));
+    -moz-background-image: linear-gradient(var(--four), var(--four), var(--two));
+    background-image: linear-gradient(var(--four), var(--four), var(--two));
     border-radius: .5vh;
     opacity: .9;
 }
 .txt {
-    color: var(--five);
     font-size: 1.5em;
 }
-
+.txt-head {
+    color: var(--five);
+}
 /* ^^styling for each page^^ */
 #profile {
     width: 45vw;
@@ -83,6 +83,7 @@ header:first-child {
     border-radius: 45vw;
     background-color: var(--four);
     margin-top: 5vh;
+    box-shadow: 0px 20px 20px white;
 }
 .land {
     text-align: center;
@@ -94,6 +95,7 @@ header:first-child {
 #res {
     width: 100%;
     margin-top: 3%;
+    box-shadow: 0px 30px 30px var(--four);
 }
 .res-page-height {
     height: 100vh;
@@ -102,13 +104,15 @@ h1 {
     text-align: center;
     color: var(--five);
 }
+#title {
+    text-shadow: 1px 3px 5px var(--one);
+}
 @media screen and (min-width: 991px) {
     #profile {
         width: 40vw;
         border-radius: 40vw;
     }
     .txt {
-        color: var(--five);
         font-size: 2.5vh;
     }
     * {
