@@ -1,5 +1,7 @@
 * {
     color: white;
+    font-family: 'Luxurious Roman', cursive;
+    font-weight: bold;
 }
 body {
     background-color: var(--four);
@@ -11,9 +13,9 @@ header {
     display: flex;
     text-align: center;
     justify-content: space-between;
-    height: 5vh;
-    margin-top: .25vh;
-    margin-bottom: .25vh;
+    height: 6vh;
+    margin-top: .5vh;
+    margin-bottom: .55vh;
 }
 header:first-child {
     margin-left: 1vh;
@@ -52,8 +54,9 @@ header:first-child {
 .sub-drop {
     position: relative;
     z-index: 1;
-    opacity: 1;
-    margin-top: 1.5vh;
+    opacity: .8;
+    margin-top: 0vh;
+    background-color: var(--four);
 }
 .link-style {
     text-decoration: none;
@@ -70,12 +73,10 @@ header:first-child {
 }
 .txt {
     color: var(--five);
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 /* ^^styling for each page^^ */
-
-
 #profile {
     width: 45vw;
     border: 20px solid var(--four);
@@ -90,6 +91,17 @@ header:first-child {
     color: var(--five);
     font-weight: bold;
 }
+#res {
+    width: 100%;
+    margin-top: 3%;
+}
+.res-page-height {
+    height: 100vh;
+}
+h1 {
+    text-align: center;
+    color: var(--five);
+}
 @media screen and (min-width: 991px) {
     #profile {
         width: 40vw;
@@ -97,6 +109,19 @@ header:first-child {
     }
     .txt {
         color: var(--five);
-        font-size: 3vh;
+        font-size: 2.5vh;
+    }
+    * {
+        font-weight: normal;
+    }
+    #res {
+        width: 70%;
+        margin-top: 7%;
+    }
+    #res-container {
+        text-align: center;
+    }
+    .res-page-height {
+        height: 160vh;
     }
 }
