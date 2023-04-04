@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+}
+
 header {
     background-color: var(--dark-gray);
     color: var(--deep-orange);
@@ -5,6 +9,7 @@ header {
     display: flex;
     text-align: center;
     justify-content: space-between;
+    height: 5vh;
 }
 #menu-toggle {
     margin-right: 0;
@@ -46,9 +51,22 @@ header {
     --orange-yellow: #be4f0c;
 }
 
+.sub-drop {
+    background-color: var(--dark-gray);
+    position: relative;
+    z-index: 1;
+    opacity: .8;
+    margin-top: 1.5vh;
+}
 
+.link-style {
+    color: var(--deep-orange);
+    text-decoration: none;
+}
 
-
+.sub-menu {
+    background-color: var(--dark-gray);
+}
 
 @media screen and (min-width: 991px) {
 }
