@@ -12,16 +12,31 @@ header {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
-#main-page {
+#content {
     -webkit-background-image: linear-gradient(var(--light-orange), var(--orange-yellow), var(--deep-orange));
     -moz-background-image: linear-gradient(var(--light-orange), var(--orange-yellow), var(--deep-orange));
     background-image: linear-gradient(var(--light-orange), var(--orange-yellow), var(--deep-orange));
     height: 100vh;
 }
 
+#links-menu {
+    position: relative;
+}
+
+#mini-menu {
+    margin-right: 0px;
+}
+
+.subMob {
+    display: block;
+}
+
+.subDesk {
+    display: block;
+}
 
 :root {
     --dark-gray: #393939;
@@ -31,7 +46,10 @@ header {
     --orange-yellow: #be4f0c;
 }
 
-@media screen and (min-width: 960px) {
-    * {
-    }
+
+
+
+
+@media screen and (min-width: 991px) {
 }
+/* hover the divs chnage */
