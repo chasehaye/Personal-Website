@@ -8,6 +8,7 @@ const linksMenuBtnDesk = document.querySelector(".link-btn-desk");
 const linksMenuMob = document.querySelectorAll(".subMob")
 const linksMenuDesk = document.querySelectorAll(".subDesk")
 const subDrop = document.querySelector(".sub-drop")
+const breaksInProjectMenu = document.querySelectorAll(".breaks")
 // open and close the two sub menu variations based on screen size
 function togSubMenus() {
     let wid = window.innerWidth;
@@ -50,6 +51,25 @@ function togLinksMenuDesk() {
         component.classList.toggle("hidden")
     });
 }
+
+
+function removeProjectMenuBreaks() {
+    let wid = window.innerWidth
+    if (wid > 991) {
+        breaksInProjectMenu.forEach((component) => {
+            component.classList.remove("hidden");
+        })
+    }else{
+        breaksInProjectMenu.forEach((component) => {
+            component.classList.add("hidden");
+        })
+    }
+}
+
+removeProjectMenuBreaks();
+
+
+
 // listner to close sub menus if the browser resizes
 addEventListener("resize", (e) => {
     title.classList.remove("hidden");
@@ -57,7 +77,10 @@ addEventListener("resize", (e) => {
     menuComponents.forEach((component) => {
         component.classList.add("hidden");
     });
+    removeProjectMenuBreaks();
 });
+
+
 menuBtn.addEventListener("click", togSubMenus);
 linksMenuBtnMob.addEventListener("click", togLinksMenuMob);
 linksMenuBtnDesk.addEventListener("click", togLinksMenuDesk);

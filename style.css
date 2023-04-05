@@ -1,10 +1,8 @@
 * {
     color: var(--five);
-    font-family: 'Luxurious Roman', cursive;
-    font-weight: bold;
 }
 body {
-    background-color: var(--four);
+    background-color: var(--one);
     margin: 0;
 }
 header {
@@ -13,35 +11,31 @@ header {
     display: flex;
     text-align: center;
     justify-content: space-between;
-    height: 6vh;
+    height: 5vh;
     margin-bottom: 1vh;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 5px 10px white;
 }
-header:first-child {
-    margin-left: 1vh;
+header:first-child a {
+    margin-left: 1vw;
 }
 #menu-toggle {
-    margin-right: 1vh;
-}
-.hidden {
-    display: none !important;
+    margin-right: 1vw;
 }
 .content {
-    -webkit-background-image: linear-gradient(var(--three), var(--two), var(--one));
-    -moz-background-image: linear-gradient(var(--three), var(--two), var(--one));
-    background-image: linear-gradient(var(--three), var(--two), var(--one));
+    background-color: var(--one);
     height: 100vh;
-}
-#links-menu {
-    position: relative;
-}
-#mini-menu {
-    margin-right: 0px;
 }
 .subMob {
     display: block;
+    text-align: center;
 }
 .subDesk {
     display: block;
+    text-align: center;
 }
 :root {
     --one: #C4F1BE;
@@ -61,14 +55,18 @@ header:first-child {
     text-decoration: none;
 }
 .sub-menu {
-    background-color: var(--dark-gray);
+    background-color: var(--three);
+    text-align: center;
+    margin-top: -1vh;
 }
 .hov {
-    -webkit-background-image: linear-gradient(var(--four), var(--four), var(--two));
-    -moz-background-image: linear-gradient(var(--four), var(--four), var(--two));
-    background-image: linear-gradient(var(--four), var(--four), var(--two));
-    border-radius: .5vh;
-    opacity: .9;
+    background-color: var(--two);
+    box-shadow: 0px 0px 70px white;
+    border-radius: 5px;
+}
+.hov:hover {
+    background-color: var(--three);
+    box-shadow: 0px 0px 10px white;
 }
 .txt {
     font-size: 1.5em;
@@ -76,13 +74,12 @@ header:first-child {
 .txt-head {
     color: var(--five);
 }
-/* ^^styling for each page^^ */
 #profile {
     width: 45vw;
     border: 20px solid var(--four);
     border-radius: 45vw;
     background-color: var(--four);
-    margin-top: 5vh;
+    margin-top: 4vh;
     box-shadow: 0px 20px 20px white;
 }
 .land {
@@ -91,6 +88,7 @@ header:first-child {
 #title {
     color: var(--five);
     font-weight: bold;
+    text-shadow: 1px 3px 5px var(--one);
 }
 #res {
     width: 100%;
@@ -104,8 +102,25 @@ h1 {
     text-align: center;
     color: var(--five);
 }
-#title {
-    text-shadow: 1px 3px 5px var(--one);
+#proj-side-bar {
+    background-color: var(--two);
+    display: flex;
+    flex-direction: column;
+    margin-top: -1vh;
+}
+#proj-side-bar a {
+    margin-top: .5vh;
+    margin-bottom: .5vh;
+    text-align: center;
+}
+#home-contents {
+    margin: 5vh;
+}
+.link-btn-desk {
+    cursor: pointer;
+}
+#menu-toggle {
+    cursor: pointer;
 }
 @media screen and (min-width: 991px) {
     #profile {
@@ -128,4 +143,23 @@ h1 {
     .res-page-height {
         height: 160vh;
     }
+    .proj-page {
+        display: flex;
+    }
+    #proj-side-bar {
+        width: 5vw;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #proj-side-bar a {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+    .nav-menu-items {
+        font-size: 2vh;
+        margin-top: 1.5vh;
+    }
+}
+.hidden {
+    display: none !important;
 }
