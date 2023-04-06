@@ -221,6 +221,7 @@ h1 {
         width: 5vw;
         border-top-left-radius: 1vw;
         border-top-right-radius: 1vw;
+        cursor: pointer;
     }
 }
 .hidden {
