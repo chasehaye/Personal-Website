@@ -87,7 +87,7 @@ header:first-child a {
     box-shadow: 0px 0px 10px var(--four);
 }
 .txt {
-    font-size: 1.5em;
+    color: var(--four);
 }
 .txt-head {
     color: var(--four);
@@ -119,6 +119,13 @@ header:first-child a {
 h1 {
     text-align: center;
     color: var(--five);
+    text-shadow: 0px 5px 15px#F6AE2D;
+}
+h3 {
+    text-align: center;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    font-size: 3vh;
 }
 #proj-side-bar a {
     margin-top: .5vh;
@@ -152,11 +159,18 @@ h1 {
 }
 @media screen and (min-width: 991px) {
     #profile {
-        width: 40vw;
+        width: 30vw;
         border-radius: 40vw;
     }
-    .txt {
-        font-size: 2.5vh;
+    h1 {
+        font-size: 7vh;
+        margin-bottom: 0;
+    }
+    h3 {
+        font-size: 4vh;
+        text-shadow: 0px 5px 30px var(--five);
+        margin-left: 0vw;
+        margin-right: 0vw;
     }
     * {
         font-weight: normal;
