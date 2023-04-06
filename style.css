@@ -7,6 +7,7 @@ body {
 }
 header {
     background-color: var(--four);
+    background-image: linear-gradient(var(--one), var(--four));
     font-size: 4vh;
     display: flex;
     text-align: center;
@@ -17,7 +18,7 @@ header {
     border-bottom-right-radius: 1vw;
     position: relative;
     z-index: 2;
-    box-shadow: 0px 5px 10px white;
+    box-shadow: 0px 5px 10px var(--two);
 }
 header:first-child a {
     margin-left: 1vw;
@@ -41,11 +42,12 @@ header:first-child a {
     text-align: center;
 }
 :root {
-    --one: #C4F1BE;
-    --two: #A2C3A4;
-    --three: #869D96;
-    --four: #525B76;
-    --five: #201E50;
+    --one: #2F323A;
+    --two: #FF9F1C;
+    --three: #F6AE2D;
+    --four: rgb(202, 202, 202);
+    --five: rgb(17, 17, 17);
+    --six: #8b8b8b;
 }
 .sub-drop {
     position: relative;
@@ -55,6 +57,7 @@ header:first-child a {
     background-color: var(--four);
     border-bottom-left-radius: 1vh;
     border-bottom-right-radius: 1vh;
+    box-shadow: 0px 7px 10px var(--two);
 }
 .sub-drop div a{
     margin-right: 1vw;
@@ -64,45 +67,51 @@ header:first-child a {
     text-decoration: none;
 }
 .sub-menu {
-    background-color: var(--three);
+    background-color: var(--two);
+    background-image: linear-gradient(var(--two), var(--three), var(--one));
     text-align: center;
     margin-top: -1vh;
+    border-bottom-left-radius: 15vw;
+    border-bottom-right-radius: 15vw;
+    border-top-left-radius: 3vw;
+    border-top-right-radius: 3vw;
+    margin-bottom: 3vh;
 }
 .hov {
-    background-color: var(--two);
-    box-shadow: 0px 0px 1vh var(--three);
+    background-color: var(--six);
+    box-shadow: 0px 0px 1vh var(--two);
     border-radius: 5px;
 }
 .hov:hover {
-    background-color: var(--three);
-    box-shadow: 0px 0px 10px white;
+    background-color: var(--two);
+    box-shadow: 0px 0px 10px var(--four);
 }
 .txt {
     font-size: 1.5em;
 }
 .txt-head {
-    color: var(--five);
+    color: var(--four);
 }
 #profile {
     width: 45vw;
-    border: 20px solid var(--four);
+    border: 2px solid var(--four);
     border-radius: 45vw;
     background-color: var(--four);
     margin-top: 4vh;
-    box-shadow: 0px 20px 20px white;
+    box-shadow: 0px 0px 9px var(--six);
 }
 .land {
     text-align: center;
 }
 #title {
-    color: var(--five);
+    color: var(--three);
     font-weight: bold;
-    text-shadow: 1px 3px 5px var(--one);
+    text-shadow: 4px 4px 6px var(--six);
 }
 #res {
     width: 100%;
     margin-top: 3%;
-    box-shadow: 0px 30px 30px var(--four);
+    box-shadow: 0px 0px 10px var(--four);
 }
 .res-page-height {
     height: 100vh;
@@ -137,6 +146,9 @@ h1 {
   background-color: var(--two);
   text-align: center;
   bottom: 0;
+  border-top-left-radius: 2vw;
+  border-top-right-radius: 2vw;
+  color: var(--five);
 }
 @media screen and (min-width: 991px) {
     #profile {
@@ -166,6 +178,7 @@ h1 {
         width: 5vw;
         justify-content: space-between;
         align-items: center;
+        background-color: var(--four);
     }
     #proj-side-bar a {
         margin-top: 2vh;
@@ -193,16 +206,21 @@ h1 {
     }
     #sidebar-container {
         height: 400%;
-        background-color: var(--two);
+        background-color: var(--four);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         border-bottom: 3vh solid var(--two);
-        margin-top: -1vh;
+        margin-top: 1vh;
+        border-top-left-radius: 1vw;
+        border-top-right-radius: 1vw;
+        box-shadow: 0px 0px 10px var(--six);
     }
     .foot {
         left: 0;
         width: 5vw;
+        border-top-left-radius: 1vw;
+        border-top-right-radius: 1vw;
     }
 }
 .hidden {
