@@ -156,6 +156,10 @@ h3 {
   border-top-left-radius: 2vw;
   border-top-right-radius: 2vw;
   color: var(--five);
+  cursor: pointer;
+}
+.link-btn-mob {
+    cursor: pointer;
 }
 @media screen and (min-width: 991px) {
     #profile {
@@ -216,6 +220,9 @@ h3 {
         margin: 5vh;
     }
     .link-btn-desk {
+        cursor: pointer;
+    }
+    .link-btn-mob {
         cursor: pointer;
     }
     #sidebar-container {
