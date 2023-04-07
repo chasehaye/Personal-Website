@@ -286,6 +286,9 @@ h3 {
         border-top-right-radius: 1vw;
         cursor: pointer;
     }
+    #proj-contents {
+        margin-left: 1vw;
+    }
 }
 .hidden {
     display: none !important;
