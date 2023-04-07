@@ -1,3 +1,4 @@
+//Cached variables
 const homeBtn = document.getElementById("home");
 const title = document.getElementById("title");
 const menuBtn = document.getElementById("menu-toggle");
@@ -28,7 +29,7 @@ function togSubMenus() {
      });
     }
 }
-// close link sub menus
+// closes link sub menu
 function linkMenuOff() {
     subDrop.classList.add("hidden");
     linksMenuMob.forEach((component) => {
@@ -38,22 +39,21 @@ function linkMenuOff() {
         component.classList.add("hidden")
     });
 }
-// toggles mobile submenu links
+// toggles mobile links submenu
 function togLinksMenuMob() {
     subDrop.classList.toggle("hidden");
     linksMenuMob.forEach((component) => {
         component.classList.toggle("hidden")
     });
 }
-// toggles desktop submenu
+// toggles desktop links submenu
 function togLinksMenuDesk() {
     subDrop.classList.toggle("hidden");
     linksMenuDesk.forEach((component) => {
         component.classList.toggle("hidden")
     });
 }
-
-
+// removes breaks inside of the project submenu for a cleaner interaction
 function removeProjectMenuBreaks() {
     let wid = window.innerWidth
     if (wid > 991 || wid < 540) {
@@ -67,10 +67,7 @@ function removeProjectMenuBreaks() {
     }
 }
 removeProjectMenuBreaks();
-
-
-
-
+// listens to user scrolling down the page
 window.onscroll = function() {
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight + 50) {
         returnProjBtn.classList.remove("hidden");
@@ -78,25 +75,12 @@ window.onscroll = function() {
         returnProjBtn.classList.add("hidden");
     }
   };
-
-
+//function scrolls back to the top of the projects page
 function topOfPage () {
     window.scrollTo({top: 0});
 };
-
-
-//dectect where on the page users is (page height) EVNT LST
-//if below certain point remove hidden class from foot
-//code some sort of logic to scroll to top of page upon click EVNT LST
-
-
-
-
-
-
-
-
-// listner to close sub menus if the browser resizes
+//event listeners
+// browser size listner to close sub menus if the browser resizes
 addEventListener("resize", (e) => {
     title.classList.remove("hidden");
     mobileSubMenu.classList.add("hidden");
@@ -105,11 +89,6 @@ addEventListener("resize", (e) => {
     });
     removeProjectMenuBreaks();
 });
-
-
-
-
-
 menuBtn.addEventListener("click", togSubMenus);
 linksMenuBtnMob.addEventListener("click", togLinksMenuMob);
 linksMenuBtnDesk.addEventListener("click", togLinksMenuDesk);
