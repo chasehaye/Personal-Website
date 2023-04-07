@@ -88,6 +88,7 @@ header:first-child a {
 }
 .txt {
     color: var(--four);
+    font-size: 2vh;
 }
 .txt-head {
     color: var(--four);
@@ -145,6 +146,8 @@ h3 {
 }
 #proj-contents {
     height: 200%;
+    width: 100%;
+    
 }
 .foot {
   position: fixed;
@@ -160,6 +163,45 @@ h3 {
 }
 .link-btn-mob {
     cursor: pointer;
+}
+#game-head {
+    text-align: center;
+    font-size: 4vh;
+    margin-right: 0px;
+    color: var(--four);
+}
+#time {
+    display: flex;
+    justify-content: space-evenly
+}
+#userInput {
+    display: flex;
+    justify-content: center;
+}
+#new-word-input {
+    border-radius: 2vw;
+    background-color: var(--one);
+    color: var(--four);
+    font-size: 2vh;
+    box-shadow: 0px 0px 800px var(--two);
+    width: 7.5%;
+}
+#startBtn {
+    border-radius: 3vw;
+    background-color: var(--two);
+    border: 0px;
+    box-shadow: 0px 0px 5px var(--four);
+    color: var(--four);
+    height: 5vh;
+}
+#startBtn:hover {
+    background-color: var(--four);
+    color: var(--two);
+}
+.txtList {
+    margin: 1vw;
+    color: var(--four);
+    list-style-type: none;
 }
 @media screen and (min-width: 991px) {
     #profile {
