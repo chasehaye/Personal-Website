@@ -203,6 +203,18 @@ h3 {
     color: var(--four);
     list-style-type: none;
 }
+.wordimg {
+    width: 40%;
+    border-radius: 35%;
+}
+.imgcont {
+    display: flex;
+    justify-content: center
+}
+#words-list {
+    display: flex;
+
+}
 @media screen and (min-width: 991px) {
     #profile {
         width: 30vw;
